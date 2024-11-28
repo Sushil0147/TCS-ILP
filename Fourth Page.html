@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", "Verdana", Helvetica;
+    }
+
+    .main-heading {
+      margin: 10px;
+      margin-left: 40px;
+    }
+
+    h2 {
+      font-family: "Arial", "Verdana", Helvetica;
+      color: #800000;
+      font-weight: solid;
+      align-content: center;
+    }
+
+    h3 {
+      font-family: "Arial", "Verdana", Helvetica;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #9FA6B2;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-family: "Arial", "Verdana", Helvetica;
+      font-size: 12px;
+    }
+
+    li a:hover {
+      background-color: #f2f3f4;
+    }
+
+    .loggedInUserName {
+      display: flex;
+      margin: 15px;
+      justify-content: end;
+    }
+
+    .logout {
+      border-radius: 12px;
+      margin-left: 10px;
+      background-color: #E67E00;
+      color: white;
+      border: none;
+      width: 105px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .viewBillAndPay {
+      height: 40px;
+      background: #318CE7;
+      color: white;
+      align-content: center;
+      padding-left: 20px;
+      font-family: "Arial", "Verdana", Helvetica;
+      border-radius: 10px;
+    }
+
+    .instructions {
+      margin: 20px;
+      display: flex;
+    }
+
+    .clickHere {
+      height: 30px;
+      width: 100px;
+      background: #318CE7;
+      color: white;
+      align-content: center;
+      font-family: "Arial", "Verdana", Helvetica;
+      border-radius: 7px;
+      border: none;
+      margin-left: 20px;
+      margin-top: -5px;
+      cursor: pointer;
+    }
+
+    .body-content {
+      margin: 18px;
+    }
+
+    .table1 {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th {
+      height: 40px;
+      background: #566573;
+      border-radius: 6px;
+      color: white;
+      font-size: 15px;
+    }
+
+    td {
+      padding: 5px;
+      font-family: Sans-serif;
+      font-size: 15px;
+    }
+
+    .table2 {
+      width: 40%;
+      margin-top: 20px;
+      justify-content: center;
+      text-align: cenetr;
+      align-item: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom:20px;
+    }
+    .formForRadioButton{
+      display:flex;
+      align-item:center;
+      justify-content:center;
+      margin-top:25px;
+    }
+
+    .payNow {
+      margin-top: 30px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .payNowButton {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      min-height: 10px;
+      min-width: 80px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-heading">
+    <h2>Quick EBill</h2>
+  </div>
+
+  <div>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">Pay Bill</a></li>
+      <li><a href="#contact">REGISTER COMPLANT</a></li>
+      <li><a href="#about">COMPLANT STATUS</a></li>
+    </ul>
+    <div class="loggedInUserName">
+      <h3>Welcome CustomerName</h3>
+      <div class="logout">
+        <button style="background-color: #E67E00;border: none;margin-left:10px;color:white;font-size: 12px;margin-top:2px;cursor: pointer;">LOGOUT</button>
+        <i style="margin-left:10px;" class="fa-solid fa-right-from-bracket"></i>
+      </div>
+    </div>
+    <div class="body-content">
+      <div class="viewBillAndPay">
+        <h3>Bill Payment</h3>
+      </div>
+      <div class="instructions">
+        <p>For Detailed Payment Instructions</p>
+        <button class="clickHere" value="button">Click Here</button>
+      </div>
+      <div class="table-content">
+        <table class="table1">
+          <tr>
+            <th colspan='2'>Bill Details</th>
+          </tr>
+          <tr>
+            <td>Bill Amount</td>
+            <td style="color:red;text-align:center"><span>₹</sapn>2028.00</td>
+          </tr>
+          <tr>
+            <td>Total Payable Amount</td>
+            <td style="color:red;text-align:center"><span>₹</sapn>2028.00</td>
+          </tr>
+          <tr>
+            <td>PG Charge</td>
+            <td style="color:red;text-align:center">As Applicable</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table class="table2">
+          <tr>
+            <th style="background-color:#007BFF;font-size:small">Consumer Number</th>
+            <th style="background-color:#007BFF;font-size:small">Bill Number</th>
+            <th style="background-color:#007BFF;font-size:small">Payable Amount</th>
+          </tr>
+          <tr>
+            <td style="text-align: center;background-color:#ecf0f1;padding:10px;">1122535244752</td>
+            <td style="text-align: center;background-color:#ecf0f1;padding:10px;">32523654</td>
+            <td style="text-align: center;background-color:#ecf0f1;padding:10px;">Rs. 2028</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p style="color:#007BFF;font-size:17px;">Kindly Select Mode of Payment</p>
+        <hr>
+        <form action="#" class="formForRadioButton">
+            <input type="radio" id="html" name="cardType" value="credit">
+            <label style="margin:10px;">Credit Card</label><br>
+            <input type="radio" id="css" name="cardType" value="debit">
+            <label style="margin:10px;">Debit Card</label>
+        </form>
+      </div>
+
+      <div class="payNow">
+        <button class="payNowButton" value="button">Pay now</button>
+        <button style="background-color:#808b96" class="payNowButton" value="button">Back To Home</button>
+      </div>
+    </div>
+    <div>
+</body>
+
+</html>

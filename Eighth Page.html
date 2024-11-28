@@ -1,0 +1,168 @@
+<!-- created from scratch -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", "Verdana", Helvetica;
+        }
+
+        .main-heading {
+            margin: 10px;
+            margin-left: 40px;
+        }
+
+        h2 {
+            font-family: "Arial", "Verdana", Helvetica;
+            color: #800000;
+            font-weight: solid;
+            align-content: center;
+        }
+
+        h3 {
+            font-family: "Arial", "Verdana", Helvetica;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #9FA6B2;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-family: "Arial", "Verdana", Helvetica;
+            font-size: 12px;
+        }
+
+        li a:hover {
+            background-color: #f2f3f4;
+        }
+
+        .loggedInUserName {
+            display: flex;
+            margin: 15px;
+            justify-content: end;
+        }
+
+        .logout {
+            border-radius: 12px;
+            margin-left: 10px;
+            background-color: #E67E00;
+            color: white;
+            border: none;
+            width: 105px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .complaintStatus {
+            height: 40px;
+            background: #318CE7;
+            color: white;
+            align-content: center;
+            padding-left: 20px;
+            font-family: "Arial", "Verdana", Helvetica;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .body-content {
+            margin: 18px;
+        }
+
+        .payNow {
+            margin-top: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .payNowButton {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            min-height: 10px;
+            min-width: 80px;
+            cursor: pointer;
+        }
+
+        input[type=text]{
+            width: 30%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-heading">
+        <h2>Quick EBill</h2>
+    </div>
+
+    <div>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">Pay Bill</a></li>
+            <li><a href="#contact">REGISTER COMPLANT</a></li>
+            <li><a href="#about">COMPLANT STATUS</a></li>
+        </ul>
+        <div class="loggedInUserName">
+            <h3>Welcome CustomerName</h3>
+            <div class="logout">
+                <button
+                    style="background-color: #E67E00;border: none;margin-left:10px;color:white;font-size: 12px;margin-top:2px;cursor: pointer;">LOGOUT</button>
+                <i style="margin-left:10px;" class="fa-solid fa-right-from-bracket"></i>
+            </div>
+        </div>
+        <div class="body-content">
+            <div class="complaintStatus">
+                <h3>Check Your Complaint Here</h3>
+            </div>
+            <div class="container">
+                <form action="#">
+                    <div>
+                        <label for="complaintNumber">Complaint Number :</label>
+                        <input type="text" id="complaintNumber" name="complaintNumber">
+                    </div>
+                    <div class="payNow">
+                        <button style="background-color:#808b96" class="payNowButton" value="button">Reset</button>
+                        <button class="payNowButton" value="button">Get Complaint Status</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>

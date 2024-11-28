@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+
+</head>
+<style>
+  .main-heading {
+    margin-top: -20px;
+    height: 40px;
+    background-color: #89CFF0;
+  }
+
+  h2,
+  h3 {
+    font-family: "Arial", "Verdana", Helvetica;
+    color: #318CE7;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .consumer {
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .consumerDetails-heading {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .consumerDetails {
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .user {
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .userDetails-heading1 {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .userDetails-heading2 {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .userDetails-heading3 {
+    margin-bottom: 20px;
+  }
+
+  .userDetails {
+    margin-top: 20px;
+    margin-right: 150px;
+  }
+
+  .login {
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .loginDetails-heading {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .loginDetails {
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+
+  .button {
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .reset-button {
+    background-color: #222222;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 10px;
+    min-width: 80px;
+  }
+
+  .register-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 10px;
+    min-width: 80px;
+  }
+</style>
+
+<body>
+  <div class="main-heading">
+    <h2 style="color:white;">Register New User</h2>
+  </div>
+  <form>
+    <div>
+      <h3>Consumer Details</h3>
+      <hr>
+      <div class="consumer">
+        <div class="consumerDetails-heading">
+          <div class="consumerDetails">
+            <span style="color:red">*</span>
+            <label for="consumerNumber">Consumer Number :</label>
+            <input type="text" id="consumerNumber" placeholder="Consumer Number">
+          </div>
+          <div class="consumerDetails">
+            <span style="color:red">*</span>
+            <label for="billNumber">Bill Number :</label>
+            <input type="text" id="billNumber" placeholder="Last 5 digits">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>User Details</h3>
+      <hr>
+      <div class="user">
+        <div class="userDetails-heading1">
+          <div class="userDetails">
+            <label for="inputState">Title</label>
+            <select id="inputState" class="form-control">
+              <option selected>Please Select</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="userDetails">
+            <span style="color:red">*</span>
+            <label for="inputAddress2">Name</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your Name">
+          </div>
+        </div>
+        <div class="userDetails-heading2">
+          <div class="userDetails">
+            <span style="color:red">*</span>
+            <label for="inputCity">Email Id</label>
+            <input type="text" class="form-control" id="inputCity" paceholder="Email address">
+          </div>
+          <div class="userDetails">
+            <span style="color:red">*</span>
+            <label for="inputState">Mobile Number</label>
+            <select id="inputState" class="form-control">
+              <option selected>Please Select</option>
+              <option>...</option>
+            </select>
+          </div>
+          <br>
+        </div>
+        <div class="userDetails-heading3">
+          <label for="inputState"></label>
+          <input type="text" class="mobileNumberPlaceholder" id="inputZip" placeholder="Mobile Number">
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>Login Details</h3>
+      <hr>
+      <div class="login">
+        <div class="loginDetails-heading">
+          <div class="loginDetails">
+            <span style="color:red">*</span>
+            <label for="userId">User Id: </label>
+            <input type="text" class="userId" id="userId">
+          </div>
+          <div class="loginDetails">
+            <span style="color:red">*</span>
+            <label for="Password">Password: </label>
+            <input type="Password" class="Password" id="Password">
+          </div>
+        </div>
+        <div class="loginDetails-heading">
+          <div class="loginDetails">
+            <span style="color:red">*</span>
+            <label for="Cpassword">Confirm Password: </label>
+            <input type="Cpassword" class="Cpassword" id="Cpassword">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="button">
+        <button type="reset" class="reset-button" value="Reset">Reset</button>
+        <button type="button" class="register-button">Register</button>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
